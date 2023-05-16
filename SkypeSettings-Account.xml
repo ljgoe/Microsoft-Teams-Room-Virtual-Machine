@@ -1,0 +1,7 @@
+<SkypeSettings>
+    <UserAccount>
+        <SkypeSignInAddress>user@domain.com</SkypeSignInAddress>
+        <ExchangeAddress>user@domain.com</ExchangeAddress>
+        <Password>yourpassword</Password>
+    </UserAccount>
+</SkypeSettings>
