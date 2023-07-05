@@ -11,10 +11,10 @@ Set-ExecutionPolicy RemoteSigned
 Install-Module PowershellGet -Force
 Update-Module PowershellGet
 Install-Module -Name MSOnline –Force
+import-Module MSOnline
 Install-Module -Name ExchangeOnlineManagement
 Import-Module ExchangeOnlineManagement
 install-module AzureADPreview
-install-module MSOnline
 
 # Connect to M365 and Exchange Online with your Tenant Admin Account
 $UserCredential = Get-Credential
