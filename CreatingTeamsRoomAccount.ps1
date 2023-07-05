@@ -44,7 +44,7 @@ Get-MsolAccountSku
 $newRoom="MTR-Demo@testit.vc"
 $name="MTR-Demo"
 $pwd="yourpassword"
-$license="testitvideo:MTR_PREM"
+$license="testitvideo:Microsoft_Teams_Rooms_Pro"
 $location="AU"
 
 # Create a mailbbox resource
