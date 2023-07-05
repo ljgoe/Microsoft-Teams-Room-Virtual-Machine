@@ -1,6 +1,18 @@
+# You can Skip any modules you already have installed, 
+# I have found that on some new build PC's i have needed to run the extra comands
+
+#### OPTIONAL #####
 # Skip publicsher check 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
 Install-Module PowerShellGet -RequiredVersion 2.2.4 -SkipPublisherCheck
+
+#### OPTIONAL #####
+# Install Nuget
+Install-PackageProvider -Name nuget -MinimumVersion 2.8.5.201 -force
+
+#### OPTIONAL #####
+# Install PnP.PowerShell with version 1.12.0 
+Install-Module -Name "PnP.PowerShell" -RequiredVersion 1.12.0 -Force -AllowClobber
 
 #If you are connecting to Azure AD / Azure Resource Manager from your Windows PC for the first time, you must first run the following PowerShell commands (as Administrator):
 Install-Module -Name AzureAD
