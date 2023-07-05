@@ -49,6 +49,16 @@ $location="AU"
 
 # Create a mailbbox resource
 
+<# 
+Set the calendar processing with some key parameters and details
+1 - Setting AutomateProcessing to AutoAccept means that meetings will be processed and accepted automatically if there are no conflicts
+2 - Setting AddOrganizerToSubject to false ensures that the original subject is preserved and not replaced by the organizers’ name
+3 - Setting ProcessExternalMeetingMessages to true
+3 - Setting the RemovePrivateProperty to false ensures that the private flag for meeting requests is preserved (private meetings stay private)
+4 - Setting DeleteComments and DeleteSubject to false is critical and ensures that your meeting invitation has a “Join” button
+5 - The AdditionalResponse parameters are there to send useful information in the message back to the requester
+#> 
+
 New-Mailbox -MicrosoftOnlineServicesID $newRoom -Name $name -Room -RoomMailboxPassword (ConvertTo-SecureString -String $pwd -AsPlainText -Force) -EnableRoomMailboxAccount $true
 Start-Sleep -Seconds 31
 Set-MsolUser -UserPrincipalName $newRoom -PasswordNeverExpires $true -UsageLocation $location
@@ -62,3 +72,19 @@ Set-CalendarProcessing -Identity $newRoom -AutomateProcessing AutoAccept -AddOrg
 Connect-MsolService -Credential $UserCredential
 Set-MsolUser -UserPrincipalName $newRoom -PasswordNeverExpires $true
 Get-MsolUser -UserPrincipalName $newRoom | Select PasswordNeverExpires
+
+<# Optional
+Use the Set-Place cmdlet to update room mailboxes with additional metadata, which provides a better search and room suggestion experience”
+#>
+
+Set-Place -Identity $newRoom -IsWheelChairAccessible $true -AudioDeviceName “Audiotechnica Wireless Mics” -VideoDeviceName “POLY STUDIO X70”
+
+<# 
+Meeting Room Voice Configuration
+If you want the meeting room to be able to make calls to the PSTN you need to enable Enterprise Voice and configure a way for the user to place calls. 
+If you’re using Calling Plans from Microsoft, you need to assign the user a calling plan license. 
+If, on the other hand, you’re using Direct Routing through your own SBC or that of a Service Provider, you can grant the user account a Voice Routing Policy.
+#>
+
+Set-CsUser -Identity $newRoom -EnterpriseVoiceEnabled $true
+Grant-CsOnlineVoiceRoutingPolicy -Identity $newRoom -PolicyName “Policy Name”
