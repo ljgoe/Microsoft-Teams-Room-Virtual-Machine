@@ -1,5 +1,6 @@
 # You can Skip any modules you already have installed, 
 # I have found that on some new build PC's i have needed to run the extra comands
+# Note that if you are having issues then try using the x64 bit version of powershell running as admin
 
 #### OPTIONAL #####
 # Skip publicsher check 
@@ -29,6 +30,8 @@ Import-Module ExchangeOnlineManagement
 install-module AzureADPreview
 
 # Connect to M365 and Exchange Online with your Tenant Admin Account
+# if you get an error like this "you must use multi-factor authentication to access XYZ"
+# the just issue the base command e.g "Connect-ExchangeOnline" and authenticate 
 $UserCredential = Get-Credential
 Connect-MsolService -Credential $UserCredential
 Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true
