@@ -41,7 +41,7 @@ Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true
 Get-MsolAccountSku
 
 #Set the variables for Meeting Room account
-$newRoom="MTR-Demo@testit.vc"
+$newRoom="MTR-DemoTeamsRoom@testit.vc"
 $name="MTR-Demo"
 $pwd="yourpassword"
 $license="testitvideo:Microsoft_Teams_Rooms_Pro"
@@ -88,3 +88,9 @@ If, on the other hand, you’re using Direct Routing through your own SBC or tha
 
 Set-CsUser -Identity $newRoom -EnterpriseVoiceEnabled $true
 Grant-CsOnlineVoiceRoutingPolicy -Identity $newRoom -PolicyName “Policy Name”
+
+
+<#CHECK YOUR Settings that have been applied#>
+
+Get-mailbox -Identity $newRoom | Fl
+Get-Place -Identity $newRoom | Fl
