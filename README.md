@@ -1,5 +1,5 @@
 
-## Create a Virtual Microsoft Teams Roon for Lab purposes
+## Create a Virtual Microsoft Teams Room for Lab purposes
 
 This describes how to build a MTR for lab purposes. 
 
