@@ -13,7 +13,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Expand this to jump to a specific section</summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li><a href="#1-download-the-powershell-script-creatingteamsroomaccountps1">Download the powershell script</a></li>
     <li><a href="#2-connect-to-o365-and-exchange-online-with-your-tenant-admin-account">Connect to O365 and Exchange Online with your Tenant Admin Account</a></li>
