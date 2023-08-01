@@ -8,7 +8,7 @@
   <a href="https://techblogwiki.azurewebsites.net">
     <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <h3 align="center">Create a Virtual Microsoft Teams Room for Lab testing</h3>
+  <h3 align="center">Create a Virtual Microsoft Teams Room for Lab Testing</h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
