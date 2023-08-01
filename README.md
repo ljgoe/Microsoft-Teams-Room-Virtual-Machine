@@ -8,15 +8,7 @@
   <a href="https://techblogwiki.azurewebsites.net">
     <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">Create A Microsoft Teams Room Mailbox using powershell</h3>
-
-  <p align="center">
-    For other Cool stuff check out my site
-    <br />
-    <a href="https://toolkit.testit.vc"><strong>Explore my site</strong></a>
-    <br />
-  </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
