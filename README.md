@@ -36,8 +36,6 @@
 </details>
 
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 ### 1. Download the powershell script [CreatingTeamsRoomAccount.ps1](https://github.com/ljgoe/MS-Teams-room-creation/blob/main/CreatingTeamsRoomAccount.ps1)
@@ -47,7 +45,7 @@
 
 <!-- Optional Modules Table -->
 <details>
-  <summary>Expand to see Optional Modules to Install</summary>
+  <summary>:arrow_up_down: **Expand to see Optional Modules to Install**</summary>
   <ol>
 
 #### Optional Modules
