@@ -15,19 +15,8 @@
 <details>
   <summary>Expand this to jump to a specific section</summary>
   <ol>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#optional-Modules">Optional Modules</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#2-connect-to-o365-and-exchange-online-with-your-tenant-admin-account">Connect to O365 and Exchange Online with your Tenant Admin Account</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#1-download-the-powershell-script-creatingteamsroomaccountps1">Download the powershell script</a></li>
+    <li><a href="#2-connect-to-o365-and-exchange-online-with-your-tenant-admin-account">Connect to O365 and Exchange Online with your Tenant Admin Account</a></li>
     <li><a href="#3-get-the-meeting-room-license-sku">Get the Meeting Room License SKU</a></li>
     <li><a href="#4-set-the-variables-for-meeting-room-account">Set the variables for Meeting Room account</a></li>
     <li><a href="#5-create-a-mailbox-resource">Create The Resource Mailbox</a></li>
