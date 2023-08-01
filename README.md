@@ -29,8 +29,7 @@
 ## Getting Started
 ### 1. Download the powershell script [CreatingTeamsRoomAccount.ps1](https://github.com/ljgoe/MS-Teams-room-creation/blob/main/CreatingTeamsRoomAccount.ps1)
 
-> Install these modules if you have never connected to Office 365 / MS Online / Exchange Online
-> You can Skip any modules you already have installed, on a new built PC you will run these  comands
+> Install these optional modules if you have never connected to Office 365 / MS Online / Exchange Online
 
 <!-- Optional Modules Table -->
 <details>
