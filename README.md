@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://techblogwiki.azurewebsites.net">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Create A Microsoft Teams Room Mailbox using powershell</h3>
