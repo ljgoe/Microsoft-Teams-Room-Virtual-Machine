@@ -45,13 +45,10 @@
 > Install these modules if you have never connected to Office 365 / MS Online / Exchange Online
 > You can Skip any modules you already have installed, on a new built PC you will run these  comands
 
-<!-- TABLE OF CONTENTS -->
+<!-- Optional Modules Table -->
 <details>
-  <summary>Optional Modules to Install</summary>
+  <summary>Expand to see Optional Modules to Install</summary>
   <ol>
-    <li><a href="#optional-Modules">Optional Modules</a></li>
-  </ol>
-</details>
 
 #### Optional Modules
 1. Skip publisher check 
@@ -83,6 +80,9 @@ Import-Module ExchangeOnlineManagement
 install-module AzureADPreview
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+</ol>
+</details>
 
 <!-- Script -->
 ### 2. Connect to O365 and Exchange Online with your Tenant Admin Account
