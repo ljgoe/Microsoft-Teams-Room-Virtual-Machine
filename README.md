@@ -37,24 +37,24 @@
   <ol>
 
 #### Optional Modules
-1. Skip publisher check 
+* Skip publisher check 
 ```js
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12bInstall-Module PowerShellGet -RequiredVersion 2.2.4 -SkipPublisherCheck
 ```
-2. Install Nuget
+* Install Nuget
 ```js
 Install-PackageProvider -Name nuget -MinimumVersion 2.8.5.201 -force
 ```
-3. Install PnP.PowerShell with version 1.12.0 
+* Install PnP.PowerShell with version 1.12.0 
 ```js
 Install-Module -Name "PnP.PowerShell" -RequiredVersion 1.12.0 -Force -AllowClobber
 ```
-4. Module to connect to Azure AD / Azure Resource Manager
+* Module to connect to Azure AD / Azure Resource Manager
 ```js
 Install-Module -Name AzureAD
 Install-Module -Name Az -MinimumVersion 3.0.0 -AllowClobber -Scope AllUsers
 ```
-5. Other modules   
+* Other modules   
 ```js
 Set-ExecutionPolicy RemoteSigned
 Install-Module PowershellGet -Force
