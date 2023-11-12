@@ -5,10 +5,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://techblogwiki.azurewebsites.net">
-    <img src="Images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://testit.vc/">
+    <img src="https://testit.vc/wp-content/uploads/2023/11/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <h3 align="center">Create a Virtual Microsoft Teams Room for Lab Testing</h3>
+  <h3 align="center">Microsoft Teams Direct Routing using powershell</h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
