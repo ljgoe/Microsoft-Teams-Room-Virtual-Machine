@@ -8,7 +8,7 @@
   <a href="https://testit.vc/">
     <img src="https://testit.vc/wp-content/uploads/2023/11/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <h3 align="center">Microsoft Teams Room Virtual Machine</h3>
+  <h3 align="center">Microsoft Teams Room Mailbox Scripts</h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
